@@ -44,22 +44,22 @@ class _Logger:
         self._logger = None
 
     def info(self, msg):
-        self._log(msg, Levels.INFO)
+        self._log(str(msg), Levels.INFO)
 
     def success(self, msg):
-        self._log(msg, Levels.SUCCESS)
+        self._log(str(msg), Levels.SUCCESS)
 
     def warning(self, msg):
-        self._log(msg, Levels.WARNING)
+        self._log(str(msg), Levels.WARNING)
 
     def critical(self, msg):
-        self._log(msg, Levels.CRITICAL)
+        self._log(str(msg), Levels.CRITICAL)
 
     def error(self, msg):
-        self._log(msg, Levels.ERROR)
+        self._log(str(msg), Levels.ERROR)
 
     def status(self, msg):
-        self._log(msg, Levels.STATUS)
+        self._log(str(msg), Levels.STATUS)
 
     def table(self, objects):
         table_str = construct_table(objects)
